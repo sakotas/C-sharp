@@ -22,31 +22,31 @@ if (day == 1)
 {
     WriteLine("Monday");
 }
-if (day == 2)
-{
-    WriteLine("Tuesday");
-}
-if (day == 3)
-{
-    WriteLine("Wednesday");
-}
-if (day == 4)
-{
-    WriteLine("Thursday");
-}
-if (day == 5)
-{
-    WriteLine("Friday");
-}
-if (day == 6)
-{
-    WriteLine("Saturday");
-}
-if (day == 7)
-{
-    WriteLine("Sunday");
-}
-else
-{
-    WriteLine("I don't Know the day!!!");
-}
+    else if (day == 2)
+    {
+        WriteLine("Tuesday");
+    }   
+        else if (day == 3)
+        {
+        WriteLine("Wednesday");
+        }
+            else if (day == 4)
+            {
+            WriteLine("Thursday");
+            }
+                else if (day == 5)
+                {
+                    WriteLine("Friday");
+                }
+                    else if (day == 6)
+                    {
+                        WriteLine("Saturday");
+                    }
+                        else if (day == 7)
+                        {
+                            WriteLine("Sunday");
+                        }
+                            else
+                            {
+                            WriteLine("I don't Know the day!!!");
+                            }
