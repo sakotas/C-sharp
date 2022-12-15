@@ -18,33 +18,36 @@ int day = int.Parse(ReadLine()!);
 }
 
 */
-if (day == 1)
+if (day >= 0 && day <= 7)
 {
-    WriteLine("Monday");
-}
-if (day == 2)
-{
-    WriteLine("Tuesday");
-}
-if (day == 3)
-{
-    WriteLine("Wednesday");
-}
-if (day == 4)
-{
-    WriteLine("Thursday");
-}
-if (day == 5)
-{
-    WriteLine("Friday");
-}
-if (day == 6)
-{
-    WriteLine("Saturday");
-}
-if (day == 7)
-{
-    WriteLine("Sunday");
+    if (day == 1)
+    {
+        WriteLine("Monday");
+    }
+    if (day == 2)
+    {
+        WriteLine("Tuesday");
+    }
+    if (day == 3)
+    {
+        WriteLine("Wednesday");
+    }
+    if (day == 4)
+    {
+        WriteLine("Thursday");
+    }
+    if (day == 5)
+    {
+        WriteLine("Friday");
+    }
+    if (day == 6)
+    {
+        WriteLine("Saturday");
+    }
+    if (day == 7)
+    {
+        WriteLine("Sunday");
+    }
 }
 else
 {
