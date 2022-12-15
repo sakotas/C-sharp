@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "example001_heelo_console/1.0.0": {
+        "runtime": {
+          "example001_heelo_console.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "example001_heelo_console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

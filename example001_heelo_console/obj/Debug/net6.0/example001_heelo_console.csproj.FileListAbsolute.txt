@@ -1,0 +1,15 @@
+G:\GEEK\C#\лекция1\example001_heelo_console\bin\Debug\net6.0\example001_heelo_console.exe
+G:\GEEK\C#\лекция1\example001_heelo_console\bin\Debug\net6.0\example001_heelo_console.deps.json
+G:\GEEK\C#\лекция1\example001_heelo_console\bin\Debug\net6.0\example001_heelo_console.runtimeconfig.json
+G:\GEEK\C#\лекция1\example001_heelo_console\bin\Debug\net6.0\example001_heelo_console.dll
+G:\GEEK\C#\лекция1\example001_heelo_console\bin\Debug\net6.0\example001_heelo_console.pdb
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.csproj.AssemblyReference.cache
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.GeneratedMSBuildEditorConfig.editorconfig
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.AssemblyInfoInputs.cache
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.AssemblyInfo.cs
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.csproj.CoreCompileInputs.cache
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.dll
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\refint\example001_heelo_console.dll
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.pdb
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\example001_heelo_console.genruntimeconfig.cache
+G:\GEEK\C#\лекция1\example001_heelo_console\obj\Debug\net6.0\ref\example001_heelo_console.dll
