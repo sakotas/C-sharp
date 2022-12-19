@@ -21,6 +21,7 @@ int edin = number % 10;
 Write(sot);
 WriteLine(edin);
 
+//Если не со строками, а собрать число
 WriteLine(sot*10 + edin);
 
 
