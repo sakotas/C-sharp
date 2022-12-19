@@ -24,4 +24,6 @@ WriteLine($"Second number is {num2}");
 // }
 
 WriteLine(num1%num2==0?"Even":"Odd");
+
+// Вариант с одной строчкой кода (Все остальное - закомментить, кроме строк 8 и 9), а эту раскомментить:
 // WriteLine(new Random().Next(10,100)%new Random().Next(1,10) == 0?"Even":"Odd");
