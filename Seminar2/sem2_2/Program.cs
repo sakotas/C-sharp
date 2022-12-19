@@ -21,6 +21,7 @@ int edin = number % 10;
 Write(sot);
 WriteLine(edin);
 
+WriteLine(sot*10 + edin);
 
 
 
