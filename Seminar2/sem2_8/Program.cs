@@ -19,8 +19,9 @@ int Total = int.Parse(ReadLine()!);
 int min_beads =  Total - Colors + 2;
 WriteLine("Min beads to take guaranteed have two colors = {0} ", min_beads);
 
-int min_pairs = -1;
+//int min_pairs = -1;
 
-min_pairs = (min_beads % 2 == 0) ? (min_beads / 2) : (min_pairs = (min_beads / 2) + 1);
-
-WriteLine ("min pairs of beads to take to have gouranteed two colors: {0}", min_pairs);
+// min_pairs = (min_beads % 2 == 0) ? (min_beads / 2) : (min_pairs = (min_beads / 2) + 1);
+// WriteLine ("min pairs of beads to take to have gouranteed two colors: {0}", min_pairs);
+// не так понял задание
+// не решается оказывается =)
