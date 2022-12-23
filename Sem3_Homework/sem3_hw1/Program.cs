@@ -25,18 +25,18 @@ if (!ulong.TryParse(ReadLine(), out ulong Number))
 
 // Check length of the number:  (so long because can't use arrays)
 int Len = 0;
-ulong TempNum = Number; 
+ulong TempNum = Number;
 while (TempNum > 0)
-    {
-        Len += 1;
-        TempNum /=10; 
-//        WriteLine("TempNum is now: {0}, len = {1}", TempNum, Len);  // - debuging (Later I'll check how to debug using breakpoints)
-    }
+{
+    Len += 1;
+    TempNum /= 10;
+    //        WriteLine("TempNum is now: {0}, len = {1}", TempNum, Len);  // - debuging (Later I'll check how to debug using breakpoints)
+}
 //WriteLine($"Length of the number is {Len}");   //--  for debuging purposes;
 
 if (Len <= 1)
 {
-    WriteLine ("The number is palindrome");
+    WriteLine("The number is palindrome");
     return;
 }
 
@@ -46,16 +46,16 @@ ulong LowBit = 0;
 
 while (Len >= 2)
 {
-    HighBit = Number / (ulong)(Math.Pow(10,(Len-1)));
+    HighBit = Number / (ulong)(Math.Pow(10, (Len - 1)));
     LowBit = Number % 10;
-    Number = Number - (ulong)(HighBit * Math.Pow(10,(Len-1))); // Remove high bit    - If  we need save the number(not destroy it) for any case - we can add temp variable instead of number
+    Number = Number - (ulong)(HighBit * Math.Pow(10, (Len - 1))); // Remove high bit    - If  we need save the number(not destroy it) for any case - we can add temp variable instead of number
     Number = Number / 10;  // Remove Lower bit. 
     Len -= 2;
 
-// string below is debuging string..... Later I'll check how to debug using breakpoints
-//    WriteLine("Current HighBit = {0}, LowBit={1}, FlagPolindrom={2}, number_left={3}, Curren Len={4}", HighBit, LowBit,FlagPolindrom, Number, Len);
+    // string below is debuging string..... Later I'll check how to debug using breakpoints
+    //    WriteLine("Current HighBit = {0}, LowBit={1}, FlagPolindrom={2}, number_left={3}, Curren Len={4}", HighBit, LowBit,FlagPolindrom, Number, Len);
 
-    if (HighBit != LowBit) 
+    if (HighBit != LowBit)
     {
         FlagPolindrom = false;
         //Len = 0;
@@ -69,7 +69,7 @@ if (FlagPolindrom)
 }
 else
 {
-    WriteLine ("The number isn't palindrome");
+    WriteLine("The number isn't palindrome");
 }
 
 //int FirstNumber = int.Parse(ReadLine()!);

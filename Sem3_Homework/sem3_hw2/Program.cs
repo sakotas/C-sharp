@@ -6,7 +6,7 @@
 
 
 using static System.Console;
-Clear ();
+Clear();
 
 Write("input x1:");
 if (!int.TryParse(ReadLine(), out int X1))
@@ -52,5 +52,5 @@ if (!int.TryParse(ReadLine(), out int Z2))
 
 //Math.Sqrt
 //Math.Pow(x, stepen))
-double Val = Math.Sqrt (Math.Pow((X1 - X2),2) +  Math.Pow((Y1 - Y2),2) + Math.Pow((Z1-Z2),2));
-WriteLine ("Distanse between 2 points in 3D is: {0:f2}", Val);
+double Val = Math.Sqrt(Math.Pow((X1 - X2), 2) + Math.Pow((Y1 - Y2), 2) + Math.Pow((Z1 - Z2), 2));
+WriteLine("Distanse between 2 points in 3D is: {0:f2}", Val);

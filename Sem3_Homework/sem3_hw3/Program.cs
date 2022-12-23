@@ -10,7 +10,7 @@
 using static System.Console;
 Clear();
 
-WriteLine ("make numbers from 1 to N to the third power.");
+WriteLine("make numbers from 1 to N to the third power.");
 Write("input N:");
 if (!int.TryParse(ReadLine(), out int N))
 {
@@ -27,7 +27,7 @@ if (N > 0)
     }
     WriteLine(" ");
 }
-else   
+else
 {
     int index = 1;
     while (index >= N)
