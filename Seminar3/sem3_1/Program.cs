@@ -4,8 +4,8 @@
 using static System.Console;
 Clear();
 
-WriteLine("Введите номер четверти:");
-int i = int.Parse(ReadLine()!);
+Write("Введите номер четверти:");
+bool isParse=int.TryParse(ReadLine(),out int i);
 
 // if(i < 1 || i > 4)
 // {
@@ -28,6 +28,12 @@ int i = int.Parse(ReadLine()!);
 // {
 //     WriteLine("x>0 y<0");
 // }
+
+if(!isParse)
+{
+    WriteLine("Введено не число");
+    return;
+}
 
 switch (i)
 {
