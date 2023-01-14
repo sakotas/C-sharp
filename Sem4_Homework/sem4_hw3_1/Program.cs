@@ -25,10 +25,10 @@ if (ArraySize <=0)
 }
 
 Write("input lower range of Random (only first Latter will be read. It will be converted to ascii ): ");
-string LowerRange = ReadLine();
+string LowerRange = ReadLine()!;
 
 Write("input upper range of Random: (only first Latter will be read. It will be converted to ascii )");
-string UpperRange = ReadLine();
+string UpperRange = ReadLine()!;
 
 
 //WriteLine($"we got {LowerRange} and {UpperRange}");
