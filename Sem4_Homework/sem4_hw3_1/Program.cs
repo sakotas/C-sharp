@@ -4,11 +4,13 @@
 
 //////  метод, который сформирует массив указанного размера в диапазоне указанных чисел
 
+// А тут дорабатываем задачку: заполняем символами от начального до конечного (по их ASCII кодам)
+
 
 using static System.Console;
 Clear();
 
-WriteLine("Random array size Z");
+WriteLine("Random array size Z. filled with letters (between 1st a ");
 
 Write("input any integer number (array size): ");
 if (!int.TryParse(ReadLine(), out int ArraySize))
@@ -22,38 +24,39 @@ if (ArraySize <=0)
     return -1;
 }
 
-Write("input lower range of Random: ");
-if (!int.TryParse(ReadLine(), out int LowerRange))
-{
-    WriteLine("Error! Input int number, not string or float ");
-    return -1;
-}
+Write("input lower range of Random (only first Latter will be read. It will be converted to ascii ): ");
+string LowerRange = ReadLine();
 
-Write("input upper range of Random: ");
-if (!int.TryParse(ReadLine(), out int UpperRange))
-{
-    WriteLine("Error! Input int number, not string or float ");
-    return -1;
-}
+Write("input upper range of Random: (only first Latter will be read. It will be converted to ascii )");
+string UpperRange = ReadLine();
 
-PrintArray(GenerateArray(ArraySize, LowerRange, UpperRange));
+
+//WriteLine($"we got {LowerRange} and {UpperRange}");
+int begin = LowerRange[0];
+int end = UpperRange[0];
+
+if (begin > end) (begin, end) = (end,begin);
+//WriteLine($"ascii code is {begin} and {end}");
+//WriteLine($"And back from ascii to char {Convert.ToChar(begin)} and {Convert.ToChar(end)}");
+
+PrintArray(GenerateArray(ArraySize, begin, end));
 
 
 return 1;
 
- int[] GenerateArray(int size, int begin, int end)
+char[] GenerateArray(int size, int begin, int end)
  {
-    int[] array = new int[size];
+    char[] array = new char[size];
     //array[i] = new Random().Next(0,2)
     Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.Next(begin, end+1);
+        array[i] = Convert.ToChar(rnd.Next(begin, end+1));
     }
     return array;
  }
 
-void PrintArray(int[] arr)
+void PrintArray(char[] arr)
 {
     for(int i =0; i < arr.Length; i++)
     {

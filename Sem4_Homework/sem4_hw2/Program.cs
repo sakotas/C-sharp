@@ -5,7 +5,7 @@
 
 
 using static System.Console;
-
+Clear();
 
 WriteLine("Sum of all digits ");
 
