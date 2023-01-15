@@ -12,6 +12,8 @@ WriteLine($"Product of number 1..n = {GetProduct(number)}");
 
 int GetProduct(int n)
 {
+    if(n<=0) return 0;
+    
     int result = 1;
     while (n > 0)
     {
