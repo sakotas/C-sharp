@@ -1,7 +1,7 @@
 ﻿using static System.Console;
 
 Clear();
-Write("Imput number: ");
+Write("Input number: ");
 int number = int.Parse(ReadLine()!);
 
 WriteLine($"Sum number 1..A = {GetSum(number)}");
