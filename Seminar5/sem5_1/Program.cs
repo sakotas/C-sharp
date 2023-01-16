@@ -20,6 +20,8 @@ foreach (int a in array)
 
 WriteLine($"{negativeSum}  {positiveSum}");
 
+// Написать метод, который будет преобразовывать строку в число, параметры рожать сразу в числах
+
 int[] GetArray(int size, int minValue, int maxValue)
 {
     int[] resultArray = new int[size];

@@ -10,12 +10,8 @@ int[] array1 = { 6, 7, 19, 345, 3, 3 };
 
 PrintArray(array1);
 WriteLine();
-
-bool isInArray1 = SearchElement(4, array1);
-bool isInArray2 = SearchElement(3, array1);
-
-WriteLine(isInArray1);
-WriteLine(isInArray2);
+WriteLine(SearchElement(4, array1)?"Да":"Нет");
+WriteLine(SearchElement(3, array1)?"Да":"Нет");
 
 void PrintArray(int[] inArray)
 {
@@ -29,10 +25,9 @@ void PrintArray(int[] inArray)
 
 bool SearchElement(int element, int[] array)
 {
-    bool result = false;
     foreach (int i in array)
     {
-        if(element == i) result = true;
+        if(element == i) return true;
     }
-    return result;
+    return false;
 }
