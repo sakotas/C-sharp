@@ -119,7 +119,147 @@ public class IntMultiDimentionalArray
         }
     }
 
+    //<summary>
+    /// regularize row of Two-dimension array
+    /// regularize by increase(parameter true) or decrease(false)
+    /// int row param - which row we want to regularize
+    /// if arg row == -1 - regularize all rows
+    ///</summary>
+    public static void RegulaRizeArrayRowX(int[,] inArray, int row, bool increase)
+    {
+        if (row == -1)
+        {
+            for (row = 0; row < inArray.GetLength(0); row++)
+            {
+                for (int i = 0; i < inArray.GetLength(1); i++)
+                {
+                    for (int j = 1; j < inArray.GetLength(1) - i; j++)
+                    {
+                        if (inArray[row, j - 1] < inArray[row, j] && !increase)
+                        {
+                            int temp = inArray[row, j];
+                            inArray[row, j] = inArray[row, j - 1];
+                            inArray[row, j - 1] = temp;
+                        }
+                        if (inArray[row, j - 1] > inArray[row, j] && increase)
+                        {
+                            int temp = inArray[row, j];
+                            inArray[row, j] = inArray[row, j - 1];
+                            inArray[row, j - 1] = temp;
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < inArray.GetLength(1); i++)
+            {
+                for (int j = 1; j < inArray.GetLength(1) - i; j++)
+                {
+                    if (inArray[row, j - 1] < inArray[row, j] && !increase)
+                    {
+                        int temp = inArray[row, j];
+                        inArray[row, j] = inArray[row, j - 1];
+                        inArray[row, j - 1] = temp;
+                    }
+                    if (inArray[row, j - 1] > inArray[row, j] && increase)
+                    {
+                        int temp = inArray[row, j];
+                        inArray[row, j] = inArray[row, j - 1];
+                        inArray[row, j - 1] = temp;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //<summary>
+    /// regularize row of Two-dimension array
+    /// regularize by increase(parameter true) or decrease(false)
+    /// int call param - which col we want to regularize
+    //  if arg col == -1 - regularize all cols
+    ///</summary>
+    public static void RegulaRizeArrayColX(int[,] inArray, int col, bool increase)
+    {
+        if (col == -1)
+        {
+            for (col = 0; col < inArray.GetLength(1); col++)
+            {
+                for (int i = 0; i < inArray.GetLength(0); i++)
+                {
+                    for (int j = 1; j < inArray.GetLength(0) - i; j++)
+                    {
+                        if (inArray[j - 1, col] < inArray[j, col] && !increase)
+                        {
+                            int temp = inArray[j, col];
+                            inArray[j, col] = inArray[j - 1, col];
+                            inArray[j - 1, col] = temp;
+                        }
+                        if (inArray[j - 1, col] > inArray[j, col] && increase)
+                        {
+                            int temp = inArray[j, col];
+                            inArray[j, col] = inArray[j - 1, col];
+                            inArray[j - 1, col] = temp;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //<summary>
+    /// regularize row of Two-dimension array
+    /// regularize by increase(parameter true) or decrease(false)
+    /// int call param - which col we want to regularize
+    //  if arg col == -1 - regularize all cols
+    ///</summary>
+    public static int[,] CopyMNArray(int[,] inArray)
+    {
+        int[,] result = new int[inArray.GetLength(0), inArray.GetLength(1)];
+        for (int i = 0; i < inArray.GetLength(0); i++)
+        {
+            for (int j = 0; j < inArray.GetLength(0); j++)
+            {
+                result[i, j] = inArray[i, j];
+            }
+        }
+        return result;
+    }
 
 }
 
 
+public class SingleArrayInt
+{
+    //<summary>
+    /// regularize single array
+    /// increase or decrease
+    ///</summary>
+    public static void RegulaRizeArray(int[] inArray, bool increase)
+    {
+        for (int i = 0; i < inArray.Length; i++)
+        {
+            for (int j = 1; j < inArray.Length - i; j++)
+            {
+                if (inArray[j - 1] < inArray[j] && !increase)
+                {
+                    int temp = inArray[j];
+                    inArray[j] = inArray[j - 1];
+                    inArray[j - 1] = temp;
+                }
+                if (inArray[j - 1] > inArray[j] && increase)
+                {
+                    int temp = inArray[j];
+                    inArray[j] = inArray[j - 1];
+                    inArray[j - 1] = temp;
+                }
+            }
+        }
+    }
+
+
+
+}
